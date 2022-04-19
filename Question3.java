@@ -13,7 +13,6 @@ public class Question3
     Scanner obj = new Scanner(System.in);
     int number = obj.nextInt();
     int power = number * number;
-
     System.out.println(power);
     
   }
