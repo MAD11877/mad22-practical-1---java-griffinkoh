@@ -10,7 +10,12 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
-    Scanner in = new Scanner(System.in);
+    Scanner obj = new Scanner(System.in);
+    System.out.println("Enter a number: ");
+    int number = obj.nextInt();
+    int power = number * number;
+
+    System.out.println(power);
     
   }
 }

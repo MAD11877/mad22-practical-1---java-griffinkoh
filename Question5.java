@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Question5
 {
@@ -26,7 +26,24 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
      
-    Scanner in = new Scanner(System.in);
-    
+    Scanner obj = new Scanner(System.in);
+    System.out.println("How many numbers to print? ");
+    int numSet = obj.nextInt();
+    ArrayList<Integer> numList = new ArrayList<>();
+    while (numSet != 0){
+      Scanner obj2 = new Scanner(System.in);
+      System.out.println("Enter a number: ");
+      int num = obj2.nextInt();
+      numList.add(num);
+      numSet--;
+    }
+    int check = 0;
+    for (int count = 0; count < numList.size(); count++){
+      int highest = numList.get(count);
+      if (highest >= count){
+        check = highest;
+      }
+    }
+    System.out.println(check);   
   }
 }
