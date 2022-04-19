@@ -27,12 +27,10 @@ public class Question5
      */
      
     Scanner obj = new Scanner(System.in);
-    System.out.println("How many numbers to print? ");
     int numSet = obj.nextInt();
     ArrayList<Integer> numList = new ArrayList<>();
     while (numSet != 0){
       Scanner obj2 = new Scanner(System.in);
-      System.out.println("Enter a number: ");
       int num = obj2.nextInt();
       numList.add(num);
       numSet--;
