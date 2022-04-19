@@ -30,8 +30,7 @@ public class Question5
     int numSet = obj.nextInt();
     ArrayList<Integer> numList = new ArrayList<>();
     while (numSet != 0){
-      Scanner obj2 = new Scanner(System.in);
-      int num = obj2.nextInt();
+      int num = obj.nextInt();
       numList.add(num);
       numSet--;
     }
