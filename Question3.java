@@ -11,7 +11,6 @@ public class Question3
      */
      
     Scanner obj = new Scanner(System.in);
-    System.out.println("Enter a number: ");
     int number = obj.nextInt();
     int power = number * number;
 
