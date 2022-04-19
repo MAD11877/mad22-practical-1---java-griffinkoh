@@ -10,14 +10,9 @@ public class Question2
      * Hint: in.nextDouble() to read double
      */
      
-    Scanner obj1= new Scanner(System.in);
-    System.out.println("Enter your height: ");
-    double height = obj1.nextDouble();
-
-    
-    Scanner obj2= new Scanner(System.in);
-    System.out.println("Enter your height: ");
-    double weight = obj2.nextDouble();
+    Scanner in= new Scanner(System.in);
+    double height = in.nextDouble();
+    double weight = in.nextDouble();
 
     double BMI = weight / Math.pow(height, 2);
 
